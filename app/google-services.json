@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "182559153295",
+    "firebase_url": "https://imuno-1e7e8.firebaseio.com",
+    "project_id": "imuno-1e7e8",
+    "storage_bucket": "imuno-1e7e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182559153295:android:16f57771accb19c23e24fa",
+        "android_client_info": {
+          "package_name": "com.boss.imuno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182559153295-8qug0ej6dc676c76r5chma955rb3iotn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.boss.imuno",
+            "certificate_hash": "bd6e1b14f46b5cf4e1f6eeeb5ee4d3f7a5d48171"
+          }
+        },
+        {
+          "client_id": "182559153295-lrt044peg36fr4r54n2h70e2sgtp2ulq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKB_fXPBPi3HGCU0wJKa1GXiTL-9lR4sU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182559153295-lrt044peg36fr4r54n2h70e2sgtp2ulq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

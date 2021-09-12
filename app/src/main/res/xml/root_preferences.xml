@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/notification_header">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/notification_preference_key"
+            android:summary="@string/notification_summary_label"
+            android:title="@string/notification_title_label" />
+
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/pref_reminder_day_option_labels"
+            android:entryValues="@array/pref_reminder_day_option_values"
+            android:key="@string/refill_day_shared_preference_key"
+            android:title="@string/reminder_day_title_label" />
+
+
+    </PreferenceCategory>
+    <Preference android:title="Sign Out"
+        android:key="@string/sign_out_key" />
+</PreferenceScreen>

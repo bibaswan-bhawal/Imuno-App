@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.boss.imuno">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--This meta-data tag is required to use Google Play Services.-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".UI.ResetPasswordActivity" />
+        <activity
+            android:name=".UI.NoConnectionActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".Widget.RefillWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/refill_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".UI.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".UI.Main.MainActivity" />
+        <activity
+            android:name=".UI.details.DetailsActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.LoginActivity"
+            android:label=""
+            android:parentActivityName=".UI.introActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.register.RegisterActivity"
+            android:label=""
+            android:parentActivityName=".UI.introActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.introActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Main.MainActivity"
+            android:label="@string/main_activity_label"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
