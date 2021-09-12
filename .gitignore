@@ -15,3 +15,4 @@
 .settings/org.eclipse.buildship.core.prefs
 app/release/app-release.apk
 app/release/output-metadata.json
+keystore
